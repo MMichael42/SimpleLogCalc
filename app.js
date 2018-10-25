@@ -1,5 +1,3 @@
-console.log("hello from app.js");
-
 let baseNumSelected = false;
 let xNumSelected = false;
 let numPadEnabled = false;
@@ -28,6 +26,7 @@ calcBtn.addEventListener('click', (e) => {
     
     //calc log
     let ans = getBaseLog(base, xVar);
+    // do this to remove trailing zeroes and avoid answers like: log2 8 = 3.000000000000004
     ans = parseFloat(ans.toFixed(15));
     
     // update y with answer
@@ -85,6 +84,7 @@ baseNumButton.addEventListener('click', (event) => {
 
     if (!numPadEnabled) enableNumPad();
 
+    // highlight the text in the button
     baseNum.style.color = 'red';
     baseNumButton.style.color = 'red';
 
@@ -104,6 +104,7 @@ xNumButton.addEventListener('click', (event) => {
     
     if (!numPadEnabled) enableNumPad();
 
+    // highlight the text in the button
     xNum.style.color = 'red';
     xNumButton.style.color = 'red';
 
@@ -167,6 +168,7 @@ function clear() {
   disableCalc();
   disableClear();
   clearVars();
+  // set the b and x buttons back to gray
   xNumButton.style.color = 'gray';
   baseNumButton.style.color = 'gray';
 }
