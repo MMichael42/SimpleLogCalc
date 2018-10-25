@@ -86,11 +86,14 @@ baseNumButton.addEventListener('click', (event) => {
     if (!numPadEnabled) enableNumPad();
 
     baseNum.style.color = 'red';
+    baseNumButton.style.color = 'red';
+
     xNum.style.color = 'gray';
+    xNumButton.style.color = 'gray';
   }
 });
 
-document.getElementById('btnNum').addEventListener('click', (event) => {
+xNumButton.addEventListener('click', (event) => {
   console.log('btnNum clicked');
 
   // if clicked for the first time, do this stuff:
@@ -102,7 +105,10 @@ document.getElementById('btnNum').addEventListener('click', (event) => {
     if (!numPadEnabled) enableNumPad();
 
     xNum.style.color = 'red';
+    xNumButton.style.color = 'red';
+
     baseNum.style.color = 'gray';
+    baseNumButton.style.color = 'gray';
   }
 });
 
@@ -161,6 +167,8 @@ function clear() {
   disableCalc();
   disableClear();
   clearVars();
+  xNumButton.style.color = 'gray';
+  baseNumButton.style.color = 'gray';
 }
 
 function getBaseLog(base, x) {
