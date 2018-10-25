@@ -1,0 +1,118 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  color: #4A4A4A;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+sub {
+  font-style: italic;
+  font-size: 10vw;
+  color: gray;
+}
+
+#xNum {
+  color: gray;
+}
+
+
+.container {
+  border: 0px solid gray;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#equation {
+  max-width: 100%;
+  border: 0px solid;
+  font-size: 15.5vw;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#btnContainer {
+  border: 0px solid red;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.btn {
+  border: 1px solid #979797;
+  border-radius: 2px;
+  cursor: default;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  opacity: 0.20;
+}
+.btnClickable {
+  opacity: 1.0;
+  cursor: pointer;
+}
+.btnClickable:hover {
+  border: 1px solid black;
+}
+
+.btnRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 0px solid black;
+  margin-top: 10px;
+}
+
+#varRow {
+  border: 0px solid red;
+  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnVar {
+  width: 100%;
+  margin: 05px;
+  font-style: italic;
+  font-size: 20px;
+  color: gray;
+}
+
+.btnNumPad {
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+}
+.btnNumPadSpecial {
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+}
+
+
+
+#calc {
+  opacity: 0.20;
+}
+
+#clear {
+  opacity: 0.20;
+}
+
+
+.why {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 80px;
+  border: 0px solid gray;
+}
+.textAbout {
+  line-height: 1.7;
+}

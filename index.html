@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+
+  <title>Logarithm Calculator</title>
+</head>
+<body>
+  <div class = "container">
+ 
+      <div id = "equation">
+        Log<sub id="subscript">b</sub> <i id="xNum">x</i> = <span id="ans">y</span>
+      </div>
+
+      <div id = "btnContainer">
+        <!-- inputs -->
+        <div class="btnRow" id="varRow">
+          <div class="btn btnClickable btnVar" id = btnBase>b</div>
+          <div class="btn btnClickable btnVar" id = btnNum>x</div>
+        </div>
+        
+        <!-- 7 8 9 -->
+        <div class="btnRow">
+          <div class="btn btnNumPad">7</div>
+          <div class="btn btnNumPad">8</div>
+          <div class="btn btnNumPad">9</div>
+        </div>
+
+        <!-- 4 5 6 -->
+        <div class="btnRow">
+          <div class="btn btnNumPad">4</div>
+          <div class="btn btnNumPad">5</div>
+          <div class="btn btnNumPad">6</div>
+        </div>
+
+        <!--  1 2 3 -->
+        <div class="btnRow">
+          <div class="btn btnNumPad">1</div>
+          <div class="btn btnNumPad">2</div>
+          <div class="btn btnNumPad">3</div>
+        </div>
+
+        <!-- 0 . -->
+        <div class="btnRow" >
+          <div class="btn btnNumPadSpecial" id="clear">clear</div>
+          <div class="btn btnNumPad" id="zero">0</div>
+          <div class="btn btnNumPadSpecial" id="calc">calc</div>
+          <!--
+          <div class="btn btnNumPad">.</div> -->
+        </div>
+
+      </div> <!-- end of btnContainer -->
+
+      <div class="why">
+        <h2>About</h2>
+        <div class="textAbout">
+          I created this simple logarithm calculator after trying to teach myself some basic math and mathematical notation while studying algorithms and Big O notation. 
+          <br /><br />
+          While googling around I discovered most math sites and online calculators for logarithms are extremely outdated, ugly, or both. So here’s my attempt. It make have some issues, I am not a math genius. And javascript can be a bit funky when it comes to numbers at certain levels of precision. Because of that, please note these calculations are probably only accurate to 15 decimal points. Maybe don't do your homework with this.
+          <br /><br />
+          If you have any advice, or issues to fix, you can email me at johnsonMichaelDev at gmail.com, or submit a PR at the github repo here. 
+        </div>
+      </div>
+
+  </div> <!-- end of container -->
+  <script src="app.js"></script>
+</body>
+</html>
