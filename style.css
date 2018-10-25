@@ -3,6 +3,14 @@ body {
   color: #4A4A4A;
 }
 
+a {
+  color: chocolate;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+
 h1 {
   text-align: center;
   font-size: 30px;
