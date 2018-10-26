@@ -65,9 +65,8 @@ allNumPadItems.forEach( item => {
     }
 
     // enable the calc button if both variables are filled
-    if (baseNum.innerText !== 'b' && xNum.innerText !== 'x') {
-      enableCalc();
-    }
+    if (baseNum.innerText !== 'b' && xNum.innerText !== 'x') enableCalc();
+    
     // enable the clear button if at least one of the variables are filled
     if (baseNum.innerText !== 'b' || xNum.innerText !== 'x') enableClear();
   });
